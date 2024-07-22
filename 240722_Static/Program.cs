@@ -36,15 +36,15 @@
         static void Main(string[] args)
         {
             Console.WriteLine("계산기를 이용할 첫 번째 수를 입력해주세요.");
-            double.TryParse(Console.ReadLine(), out double num1);
+            double.TryParse(Console.ReadLine(), out double x);
             Console.WriteLine("두 번째 수를 입력해주세요.");
-            double.TryParse(Console.ReadLine(), out double num2);
+            double.TryParse(Console.ReadLine(), out double y);
 
-            Console.WriteLine($"{num1} + {num2} = {MyCalculator.Add(num1, num2)}");
-            Console.WriteLine($"{num1} - {num2} = {MyCalculator.Subtract(num1, num2)}");
-            Console.WriteLine($"{num1} * {num2} = {MyCalculator.Multiply(num1, num2)}");
-            Console.WriteLine($"{num1} / {num2} = {MyCalculator.Divide(num1, num2)}");
-            Console.WriteLine($"{num1} ^ {num2} = {MyCalculator.Squared(num1, num2)}");
+            Console.WriteLine($"{x} + {y} = {MyCalculator.Add(x, y)}");
+            Console.WriteLine($"{x} - {y} = {MyCalculator.Subtract(x, y)}");
+            Console.WriteLine($"{x} * {y} = {MyCalculator.Multiply(x, y)}");
+            Console.WriteLine($"{x} / {y} = {MyCalculator.Divide(x, y)}");
+            Console.WriteLine($"{x} ^ {y} = {MyCalculator.Squared(x, y)}");
         }
     }
 }
